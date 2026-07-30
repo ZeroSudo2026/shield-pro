@@ -1,59 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shield Pro V2.0 - Automated Intrusion Prevention System</title>
+    <title>ShieldPro - نظام الحماية والوقاية الآلي</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 0; }
-        header { background: linear-gradient(135deg, #1e293b, #0f172a); padding: 60px 20px; text-align: center; border-bottom: 2px solid #22c55e; }
-        h1 { font-size: 2.5rem; color: #22c55e; margin-bottom: 10px; }
-        p.subtitle { font-size: 1.2rem; color: #94a3b8; }
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 25px; text-align: center; }
-        .card h3 { color: #38bdf8; margin-top: 0; }
-        .pricing { margin-top: 50px; background: #1e293b; border: 2px solid #22c55e; border-radius: 12px; padding: 40px; text-align: center; }
-        .price { font-size: 3rem; font-weight: bold; color: #22c55e; margin: 20px 0; }
-        .btn-buy { background: #22c55e; color: #0f172a; font-size: 1.2rem; font-weight: bold; padding: 15px 30px; text-decoration: none; border-radius: 6px; display: inline-block; transition: 0.3s; }
-        .btn-buy:hover { background: #16a34a; }
-        footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; border-top: 1px solid #334155; margin-top: 50px; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        .badge {
+            background-color: #0284c7;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 6px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 28px;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn-download {
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+        }
+        .btn-download:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .footer-text {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #64748b;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>🛡️ Shield Pro V2.0</h1>
-    <p class="subtitle">Next-Generation Intrusion Prevention & Kernel Firewall Protection</p>
-</header>
+    <div class="card">
+        <span class="badge">ShieldPro IPS & Suite</span>
+        <h1>برنامج ShieldPro للوقاية والحماية</h1>
+        <p>نظام أمني متكامل لحماية الشبكات والأجهزة، يوفر حلول الوقاية التلقائية وإدارة تراخيص الأمان بسهولة واحترافية.</p>
+        
+        <div class="btn-container">
+            <!-- هذا هو الزر المربوط بالملف التنفيذي app مباشرة -->
+            <a href="app" download="ShieldPro" class="btn-download">
+                📥 تحميل البرنامج الآن (PC)
+            </a>
+        </div>
 
-<div class="container">
-    <div class="features">
-        <div class="card">
-            <h3>🔑 License Protection</h3>
-            <p>Built-in serial key engine ensuring legitimate deployment and secure authorization.</p>
-        </div>
-        <div class="card">
-            <h3>🚨 Real-Time Intrusion Ban</h3>
-            <p>Direct integration with Linux iptables firewall to drop attacker IP addresses automatically.</p>
-        </div>
-        <div class="card">
-            <h3>📄 Executive Audit Logs</h3>
-            <p>Automated PDF security incident reporting designed for compliance and IT security teams.</p>
-        </div>
+        <p class="footer-text">إصدار تجريبي جاهز للتحميل والتشغيل على الحاسوب.</p>
     </div>
-
-    <div class="pricing">
-        <h2>Commercial Single-Host License</h2>
-        <p>Get full access to Shield Pro standalone binary, real-time protection, and reporting engine.</p>
-        <div class="price">$49 <span style="font-size: 1rem; color: #94a3b8;">/ lifetime</span></div>
-        <a href="mailto:sales@zerosudo.com?subject=Shield%20Pro%20License%20Purchase" class="btn-buy">Request License Key 🚀</a>
-    </div>
-</div>
-
-<footer>
-    &copy; 2026 Shield Pro Security Systems by ZeroSudo. All rights reserved.
-</footer>
 
 </body>
 </html>
